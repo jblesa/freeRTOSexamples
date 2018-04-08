@@ -1,0 +1,60 @@
+Configuration	testfreertos
+STM32CubeMX 	4.22.0
+Date	03/20/2018
+MCU	STM32F051R8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	TIM1	SYS_VS_tim1	VP_SYS_VS_tim1
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+USART1	CTS/RTS	USART1_CTS	PA11
+USART1	CTS/RTS	USART1_RTS	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+14	PA0	GPIO_EXTI0	B1 [Blue PushButton]
+39	PC8	GPIO_Output	LD4 [Blue Led]
+40	PC9	GPIO_Output	LD3 [Green Led]
+42	PA9	USART1_TX	
+43	PA10	USART1_RX	
+44	PA11	USART1_CTS	
+45	PA12	USART1_RTS	
+46	PA13	SYS_SWDIO	SWDIO
+49	PA14	SYS_SWCLK	SWCLK
+58	PB6	I2C1_SCL	
+59	PB7	I2C1_SDA	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : testfreertos
+Project Folder : C:\Users\jblesa\Documents\freeRTOS\testfreertos
+Toolchain / IDE : EWARM
+Firmware Package Name and Version : STM32Cube FW_F0 V1.8.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
